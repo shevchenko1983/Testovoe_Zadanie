@@ -1,0 +1,146 @@
+01-04-2017 @ 22:28:08 - Ошибка: Введите данные карты для совершения платежа. Разработчики: Обязательно включите в скрипт jQuery и убедитесь, что на странице нет ошибок JavaScript.
+01-04-2017 @ 22:29:40 - Ошибка: Введите данные карты для совершения платежа. Разработчики: Обязательно включите в скрипт jQuery и убедитесь, что на странице нет ошибок JavaScript.
+01-04-2017 @ 22:38:12 - Ошибка: Введите данные карты для совершения платежа. Разработчики: Обязательно включите в скрипт jQuery и убедитесь, что на странице нет ошибок JavaScript.
+01-04-2017 @ 22:38:51 - Info: Begin processing payment for order 22 for the amount of 60
+01-04-2017 @ 22:38:51 - charges request: Array
+(
+    [currency] => uah
+    [amount] => 6000
+    [description] => Test - заказ 22
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_19YKaYFjOoEGGT7vsqDCFv5h
+)
+
+01-04-2017 @ 22:38:52 - Processing response: stdClass Object
+(
+    [id] => ch_19YKabFjOoEGGT7vPLPArd7L
+    [object] => charge
+    [amount] => 6000
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_19YKabFjOoEGGT7va919ZTuk
+            [object] => balance_transaction
+            [amount] => 220
+            [available_on] => 1484092800
+            [created] => 1483558705
+            [currency] => usd
+            [description] => Test - заказ 22
+            [fee] => 36
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 36
+                            [application] => 
+                            [currency] => usd
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 184
+            [source] => ch_19YKabFjOoEGGT7vPLPArd7L
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_19YKabFjOoEGGT7vPLPArd7L
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1483558705
+    [currency] => uah
+    [customer] => 
+    [description] => Test - заказ 22
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_19YKabFjOoEGGT7vPLPArd7L/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_19YKaYFjOoEGGT7v6I42a0W9
+            [object] => card
+            [address_city] => Полтава
+            [address_country] => UA
+            [address_line1] => Тестовая
+            [address_line1_check] => pass
+            [address_line2] => 3
+            [address_state] => Полтавская
+            [address_zip] => 83039
+            [address_zip_check] => pass
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 1
+            [exp_year] => 2018
+            [fingerprint] => eJBYi2tuXNksmrjm
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => Андрей Шевченко
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+01-04-2017 @ 22:38:55 - Success: Платеж Stripe завершен (код платежа: ch_19YKabFjOoEGGT7vPLPArd7L)
